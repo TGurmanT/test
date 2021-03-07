@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+header {
+  position: relative;
+  background: rgba(0, 190, 248, 0.5);
+  height: 80px;
+  width: 100%;
+  padding: 0 80px;
+}
+.content {
+  background: url(../img/фон.png) no-repeat;
+  background-size: cover;
+  position: relative;
+  height: calc(100vh + 100px);
+  background-position: center center;
+}
+body {
+  background-size: cover;
+  position: relative;
+  height: calc(100vh + 100px);
+  background-position: center center;
+  background: rgba(0, 190, 248, 0.5);
+}
+header .logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  font-family: "Rock Salt", cursive;
+  font-weight: bold;
+}
+header ul {
+  float: right;
+  margin-right: 20px;
+}
+header ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+header ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+a.active,
+a:hover {
+  background: aqua;
+  transition: 0.5s;
+}
+.checkbth {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-top: 27px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+.footer {
+  user-select: none;
+  position: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  background: rgba(0, 190, 248, 0.5);
+  justify-content: center;
+  text-decoration: none;
+}
+.footer a {
+  text-decoration: none;
+}
+.btn {
+  border-radius: 0;
+}
+/*меняет цвет конпки*/
+.btn-main {
+  color: #fff;
+  border-radius: 30px;
+  font-size: 18px;
+  padding: 15px 40px;
+  display: inline-block;
+  background-color: #863cfa;
+  -moz-box-shadow: 0 15px 40px #d874d8(249, 167, 68, 0.5);
+  -webkit-box-shadow: 0 15px 40px #d874d8(249, 167, 68, 0.5);
+  box-shadow: 0 15px 40px #d874d8(249, 167, 68, 0.5);
+  background-image: -moz-linear-gradient(
+    bottom,
+    rgba(255, 239, 206, 0) 0%,
+    rgba(255, 239, 206, 0.25) 100%
+  );
+  background-image: -o-linear-gradient(
+    bottom,
+    rgba(255, 239, 206, 0) 0%,
+    rgba(255, 239, 206, 0.25) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    bottom,
+    rgba(255, 239, 206, 0) 0%,
+    rgba(255, 239, 206, 0.25) 100%
+  );
+  background-image: linear-gradient(
+    bottom,
+    rgba(255, 239, 206, 0) 0%,
+    rgba(255, 239, 206, 0.25) 100%
+  );
+}
+.btn-main:hover,
+.btn-main:focus {
+  background-color: #d874d8;
+  color: #fff;
+}
+.btn-main-sm {
+  padding: 12px 35px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+.mt-100 {
+  margin-top: 100px;
+  /* margin-bottom: 100px; */
+}
+
+.subheading {
+  color: #00dbf89a;
+  padding-bottom: 15px;
+  text-transform: capitalize;
+  font-weight: 100;
+  width: 200px;
+  font-size: 30px;
+  line-height: 30px;
+  font-family: "Rock Salt", cursive;
+}
+.coment-text {
+  position: absolute;
+  color: rgba(1, 255, 242, 0.582);
+  /* font-size: 10px; */
+  font-family: "Rock Salt", cursive;
+  width: 200px;
+}
+/*Мерцание лого*/
+.logo {
+  background: 50% 100% / 50% 50% no-repeat
+    radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 10vw;
+  font-family: "Rock Salt", cursive;
+  animation: reveal 3000ms ease-in-out forwards 200ms,
+    glow 2500ms linear infinite 2000ms;
+}
+@keyframes reveal {
+  80% {
+    letter-spacing: 8px;
+  }
+  100% {
+    background-size: 300% 300%;
+  }
+}
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #fff;
+  }
+}
